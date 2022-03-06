@@ -2,6 +2,7 @@
     --main: #fd5c63;
     --black: #000101;
     --gray: #222323;
+    --lighter-gray: #F7F7F7;
 
     --main-ish: #DF3051;
     --main-ish-darker: #CC2D4A;
@@ -300,7 +301,8 @@ a{
 
 .Nearby__Destinations{
     display: flex;
-    justify-content: space-between;
+    column-gap: 30px;
+    /* justify-content: space-between; */
 }
 
 .nearby__card{
@@ -432,7 +434,6 @@ a{
 
 .Hosting{
     padding: 60px 80px 0px 80px;
-    margin-bottom: 100px;
 }
 
 .Hosting__container{
@@ -456,3 +457,136 @@ a{
     line-height: 1.1;
     padding-right: 80%;
 }
+
+/* Inspiration Section */
+
+
+.Inspiration__container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.Inspiration__title{
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.Inspiration__nav{
+    display: flex;
+    column-gap: 20px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.destinations{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.destiny{
+    flex: 21%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.destiny span{
+    color: #a0a0a0;
+}
+
+.more{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--lighter-gray);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.Links{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 80px 20px 80px;
+}
+
+.Links__list{
+    font-size: 14px;
+    color: var(--gray);
+    flex: 1;
+}
+
+.Links__list div:first-child{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Links__list li{
+    margin-bottom: 10px;
+}
+
+.Support__link{
+    color: var(--gray);
+}
+
+.Support__link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copy{
+    padding: 0px 80px;
+}
+
+.copy__container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.left{
+    display: flex;
+    column-gap: 5px;
+}
+
+.copy__info{
+    display: flex;
+    column-gap: 10px;
+}
+
+.copy__link{
+    color: var(--gray);
+}
+
+.copy__link:hover{
+    text-decoration: underline;
+}
+
+.mid a{
+    color: var(--main);
+}
+
+.right{
+    display: flex;
+}
+
+.currency{
+    display: flex;
+    column-gap: 4px;
+    margin-left: 20px;
+}
+
+.copy__link-right{
+    color: var(--gray);
+    text-decoration: underline;
+}
+
+
