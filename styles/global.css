@@ -320,11 +320,21 @@ a{
 .nearby__info{
     display: flex;
     flex-direction: column;
-    background-color: #BD1B6E;
+    background-color: #D93A31;
     height: 220px;
     color: white;
     padding-top: 25px;
     padding-left: 20px;
+}
+
+.destination2{
+    background-color: #BD1B6E;
+}
+.destination3{
+    background-color: #CC2C4B;
+}
+.destination4{
+    background-color: #DF3051;
 }
 
 .nearby__title{
@@ -469,16 +479,26 @@ a{
 
 .Inspiration__title{
     font-size: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .Inspiration__nav{
     display: flex;
-    column-gap: 20px;
+    column-gap: 15px;
     padding: 10px 0px;
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 40px;
     font-size: 14px;
+}
+
+.Inspiration__nav li{
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--gray);
+}
+
+.Inspiration__nav li:hover{
+    background-color: var(--lighter-gray);
 }
 
 .destinations{
@@ -587,6 +607,7 @@ footer{
 .copy__link-right{
     color: var(--gray);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
