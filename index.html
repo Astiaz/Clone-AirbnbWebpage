@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
     <title>Airbnb: Vacation Rentals, Cabins, Beach Houses, Unique Homes & ...</title>
 </head>
 <body>
@@ -82,7 +83,7 @@
             <div class="divider"></div>
             <div class="Guests search__atom search__small ">
                 <div class="label ">Guests</div>
-                <span class="input">Add Guests</span>
+                <span class="input">Add Guests</span>   
             </div>
             <button type="button" class="search__button">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="display:block;height:16px;width:16px;stroke:currentColor;stroke-width:4;overflow:visible">
@@ -107,7 +108,7 @@
     <main>
         <section class="Booking">
             <div class="Booking__container">
-                <div class="title"><h2>Let your curiosity do the booking</h2></div>
+                <div class=""><h2 class="title">Let your curiosity do the booking</h2></div>
                 <div class="button-container">
                     <a href="#" class="primary-button">I'm Flexible</a>
                 </div>
@@ -126,21 +127,21 @@
                 <div class="nearby__card">
                     <img src="./assets/city.png" alt="destination image" class="nearby__image">
                     <div class="nearby__info destination2">
-                        <span class="nearby__title">Barcelona</span>
-                        <span class="nearby__distance">130 kilometers away</span>
+                        <span class="nearby__title">Madrid</span>
+                        <span class="nearby__distance">50 kilometers away</span>
                     </div>
                 </div>
                 <div class="nearby__card ">
                     <img src="./assets/clouds.png" alt="destination image" class="nearby__image">
                     <div class="nearby__info destination3">
-                        <span class="nearby__title">Barcelona</span>
-                        <span class="nearby__distance">130 kilometers away</span>
+                        <span class="nearby__title">Toledo</span>
+                        <span class="nearby__distance">80 kilometers away</span>
                     </div>
                 </div>
                 <div class="nearby__card ">
                     <img src="./assets/kite.png" alt="destination image" class="nearby__image">
                     <div class="nearby__info destination4">
-                        <span class="nearby__title">Barcelona</span>
+                        <span class="nearby__title">Valencia</span>
                         <span class="nearby__distance">130 kilometers away</span>
                     </div>
                 </div>
@@ -169,7 +170,7 @@
                     <span class="giftcard__title">Shop Airbnb </br> gift cards</span>
                     <span class="button"><a href="#" class="secondary-button-dark">Learn More</a></span>
                 </div>
-                <div>
+                <div class="giftcard__image-container">
                     <img src="assets/giftcards.png" alt="" class="giftcard__image">
                 </div>
             </div>
@@ -199,44 +200,44 @@
                         <span>California</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Albarracín</p>
+                        <span>Aragón</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Altafulla</p>
+                        <span>Cataluña</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Benamahoma</p>
+                        <span>Andalucía</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Cabárceno</p>
+                        <span>Cantabria Region</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Almagro</p>
+                        <span>Castilla-La Mancha</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Añón de Moncayo</p>
+                        <span>Aragon</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Bilbao</p>
+                        <span>País Vasco</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Cambrils</p>
+                        <span>Cataluña</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Almería</p>
+                        <span>Andalucía</span>
                     </div>
                     <div class="destiny">
-                        <p>San Francisco</p>
-                        <span>California</span>
+                        <p>Badajoz</p>
+                        <span>Extremadura</span>
                     </div>
                     <div class="destiny">
                         <p class="more">Show more</p>
@@ -247,37 +248,45 @@
     </main>
     <footer>
         <section class="Links">
-            <ul class="Support Links__list">
+            <div class="Support Links-containers">
                 <div class="link-title">Support</div>
-                <li class=""><a href="#" class="Support__link">Help Center</a></li>
-                <li class=""><a href="#" class="Support__link">Safety Information</a></li>
-                <li class=""><a href="#" class="Support__link">Cancellation options</a></li>
-                <li class=""><a href="#" class="Support__link">Our COVID-19 Response</a></li>
-                <li class=""><a href="#" class="Support__link">Supporting people with disabilities</a> </li>
-                <li class=""><a href="#" class="Support__link">Report a neighbordhood concer</a> </li>
-            </ul>
-            <ul class="Community Links__list">
+                <ul class="Links__list">
+                    <li class=""><a href="#" class="Support__link">Help Center</a></li>
+                    <li class=""><a href="#" class="Support__link">Safety Information</a></li>
+                    <li class=""><a href="#" class="Support__link">Cancellation options</a></li>
+                    <li class=""><a href="#" class="Support__link">Our COVID-19 Response</a></li>
+                    <li class=""><a href="#" class="Support__link">Supporting people with disabilities</a> </li>
+                    <li class=""><a href="#" class="Support__link">Report a neighbordhood concer</a> </li>
+                </ul>    
+            </div>
+            <div class="Community Links-containers">
                 <div class="link-title">Community</div>
-                <li class=""><a href="#" class="Support__link">Airbnb.org: disaster relief housing</a> </li>
-                <li class=""><a href="#" class="Support__link">Suppoft Afghan refugees</a> </li>
-                <li class=""><a href="#" class="Support__link">Combating discrimination</a> </li>
-            </ul>
-            <ul class="Host Links__list">
+                <ul class="Links__list">
+                    <li class=""><a href="#" class="Support__link">Airbnb.org: disaster relief housing</a> </li>
+                    <li class=""><a href="#" class="Support__link">Suppoft Afghan refugees</a> </li>
+                    <li class=""><a href="#" class="Support__link">Combating discrimination</a> </li>
+                </ul>
+            </div>
+            <div class="Host Links-containers">
                 <div class="link-title">Hosting</div>
-                <li class=""><a href="#" class="Support__link">Try hosting</a> </li>
-                <li class=""><a href="#" class="Support__link">AirCover:protection for Hosts</a> </li>
-                <li class=""><a href="#" class="Support__link">Visit our community forum</a> </li>
-                <li class=""><a href="#" class="Support__link">How to host responsibly</a> </li>
-            </ul>
-            <ul class="About Links__list">
+                <ul class="Links__list">
+                    <li class=""><a href="#" class="Support__link">Try hosting</a> </li>
+                    <li class=""><a href="#" class="Support__link">AirCover:protection for Hosts</a> </li>
+                    <li class=""><a href="#" class="Support__link">Visit our community forum</a> </li>
+                    <li class=""><a href="#" class="Support__link">How to host responsibly</a> </li>
+                </ul>    
+            </div>
+            <div class="About Links-containers">
                 <div class="link-title">About</div>
-                <li class=""><a href="#" class="Support__link">Newsroom</a> </li>
-                <li class=""><a href="#" class="Support__link">Learn about new features</a> </li>
-                <li class=""><a href="#" class="Support__link">Letter from our founders</a> </li>
-                <li class=""><a href="#" class="Support__link">Carrers</a> </li>
-                <li class=""><a href="#" class="Support__link">Investors</a> </li>
-                <li class=""><a href="#" class="Support__link">Airbnb Luxe</a> </li>
-            </ul>
+                <ul class="Links__list">
+                    <li class=""><a href="#" class="Support__link">Newsroom</a> </li>
+                    <li class=""><a href="#" class="Support__link">Learn about new features</a> </li>
+                    <li class=""><a href="#" class="Support__link">Letter from our founders</a> </li>
+                    <li class=""><a href="#" class="Support__link">Carrers</a> </li>
+                    <li class=""><a href="#" class="Support__link">Investors</a> </li>
+                    <li class=""><a href="#" class="Support__link">Airbnb Luxe</a> </li>
+                </ul>
+            </div>
         </section>
 
         <section class="copy">

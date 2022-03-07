@@ -3,6 +3,8 @@
     --black: #000101;
     --gray: #222323;
     --lighter-gray: #F7F7F7;
+    --divider: #dfdfdf;
+    --hover: rgb(227, 227, 227);
 
     --main-ish: #DF3051;
     --main-ish-darker: #CC2D4A;
@@ -121,11 +123,11 @@ a{
     margin-left: 10px;
 }
 
-/* Search */
+/* Search Bar */
 
 .search__bar{
     display: flex;
-    width: 830px;
+    width: 800px;
 
     align-self: center;
 
@@ -133,10 +135,10 @@ a{
     border-radius: 40px;
 }
 
+/* Search Inputs */
 .search__input{
     padding: 13px 40px 13px 30px;
 }
-
 
 .label{
     font-size: 12px;
@@ -166,7 +168,7 @@ a{
 }
 
 .search__atom:hover{
-    background-color: rgb(227, 227, 227);
+    background-color: var(--hover);
     border-radius: 40px;
 }
 
@@ -175,6 +177,17 @@ a{
     height: 36px;
     border-left: 1px solid rgba(128, 128, 128, 0.355);
 }
+
+.search__text{
+    display: none;
+}
+
+.search__small{
+    width: 180px;
+    padding: 13px 0px 13px 20px;
+}
+
+/* Search Button */
 
 .search__button{
     display: flex;
@@ -188,17 +201,36 @@ a{
     height: 50px;
     width: 50px;
 
-    margin-left: -15px;
+    margin-left: -40px;
+    z-index: 5;
+    cursor: pointer;
 }
 
-.search__text{
-    display: none;
+.search__button:hover{
+    background-color: #DF3051;
 }
 
-.search__small{
-    width: 180px;
-    padding: 13px 0px 13px 20px;
+/* Guests Input */
+.Guests:hover{
+    background-color: white;
 }
+
+.Guests::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 5rem;
+    right: 24.4rem;
+    height: 67px;
+    width: 200px;
+}
+
+.Guests:hover::after{
+    z-index: 1;
+    background-color:rgba(227, 227, 227, 0.425);
+    border-radius: 40px;
+}
+
 
 /* MAIN */
 
@@ -310,7 +342,6 @@ a{
     flex-direction: column;
     border-radius: 15px;
     overflow: hidden;
-    width: 370px;
 }
 
 .nearby__img{
@@ -360,7 +391,7 @@ a{
 
 .experience__card{
     width: 100%;
-    height: 770px;
+    height: 48rem;
     background: url('../assets/experience.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -373,8 +404,8 @@ a{
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
-    padding-left: 90px;
+    padding-top: 4.5rem;
+    padding-left: 4rem;
 }
 
 .online{
@@ -409,13 +440,14 @@ a{
 .Giftcard__container{
     display: flex;
     flex-direction: row;
-    column-gap: 40px;
+    justify-content: space-between;
+    /* column-gap: 40px; */
 }
 
 .giftcard__info{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .giftcard__title{
@@ -436,8 +468,12 @@ a{
     background-color: var(--gray);
 }
 
+.giftcard__image-container{
+    width: 60rem;
+}
+
 .giftcard__image{
-    width: 950px;
+    width: 100%;
 }
 
 /* HOSTING */
@@ -450,15 +486,15 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 720px;
+    height: 45rem;
     background-image: url('../assets/host.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     border-radius: 10px;
-    padding-top: 70px;
-    padding-left: 80px;
-    padding-bottom: 80px;
+    padding-top: 4.5rem;
+    padding-left: 4.5rem;
+    padding-bottom: 4rem;
 }
 
 .Hosting__title{
@@ -484,7 +520,7 @@ a{
 
 .Inspiration__nav{
     display: flex;
-    column-gap: 15px;
+    column-gap: 0.5rem;
     padding: 10px 0px;
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 40px;
@@ -495,6 +531,7 @@ a{
     padding: 10px;
     border-radius: 10px;
     color: var(--gray);
+    cursor: pointer;
 }
 
 .Inspiration__nav li:hover{
@@ -526,8 +563,8 @@ a{
 
 footer{
     background-color: var(--lighter-gray);
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 3.2rem;
+    padding-bottom: 1.2rem;
 }
 
 .Links{
@@ -536,13 +573,13 @@ footer{
     padding: 0px 80px 20px 80px;
 }
 
-.Links__list{
+.Links-containers {
     font-size: 14px;
     color: var(--gray);
     flex: 1;
 }
 
-.Links__list div:first-child{
+.Links-containers div{
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -567,7 +604,7 @@ footer{
 .copy__container{
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #dfdfdf;
+    border-top: 1px solid var(--divider);
     padding-top: 20px;
     font-size: 14px;
 }
@@ -611,3 +648,261 @@ footer{
 }
 
 
+@media (max-width: 1024px) {
+
+    /* NAV */
+
+    nav{
+        padding: 40px 40px;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .nav-left{
+        width: 350px;
+    }
+    
+    .logo{
+        width: 100px;
+        height: 32px;
+        align-items: flex-end;
+    }
+    
+    .logo svg{
+        overflow: visible;
+    }
+    
+    /* Center Nav */
+    .nav-center{
+        justify-content: center;
+    }
+    
+    .menu_text{
+        padding: 10px;
+    }
+    
+    /* Right Nav */
+    .nav-right{
+        width: 25rem;
+    }
+    
+    .nav-right-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .globe_icon{
+        padding: 10px;
+    }
+    .nav-right-container a{
+        padding: 0px;
+    }
+    
+    .nav-right-container div:last-child{
+        margin-left: 10px;
+    }
+    
+    .profile__button{
+        display: flex;
+        align-items: center;
+        width: 79px;
+        height: 40px;
+    
+        background-color: white;
+        padding: 10px 7px 10px 15px;
+    
+        border-radius: 40px;
+    }
+    
+    .profile-button div:last-child{
+        margin-left: 10px;
+    }
+
+    /* SearchBar */
+
+
+
+    /* Hero */
+    
+    .Hero{
+        padding: 30px 40px;
+        margin-bottom: 30px;
+    }
+
+    .Hero__container{
+        height: 35rem;
+    }
+
+    .Hero__container .title{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .Hero__container .button-container{
+        height: 48px;
+        width: 129px;
+    }
+
+    /* Booking */
+    .Booking{
+        margin-top: -1px;
+        padding: 30px 40px;
+    }
+    
+    .Booking__container{
+        height: 35rem;
+    }
+    
+    .Booking__container .button-container{
+        height: 48px;
+        width: 129px;
+    }
+    
+    .Booking__container .title{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    /* General Class */
+    
+    .primary-button{
+        font-size: 14px;
+    }
+    
+    .section-container{
+        padding: 60px 40px 0px 40px;
+    }
+
+    .subTitle{
+        padding-top: 0px;
+    }
+
+    /* Nearby */
+
+    .Nearby__Destinations{
+        column-gap: 20px;
+    }
+
+    .nearby__info{
+        height: 160px;
+    }
+    
+    .nearby__title{
+        font-size: 30px;
+    }
+
+    .nearby__distance{
+        font-size: 16px;
+    }
+
+    /* Experiences */
+    .Experiences__Discover{
+        column-gap: 20px;
+    }
+    
+    .experience__card{
+        width: 29rem;
+        height: 29rem;
+    }
+    
+    .experience__info{
+        padding: 2rem;
+    }
+
+    .experience__title{
+        font-size: 34px;
+        line-height: 1.2;
+    }
+    
+    .secondary-button{
+        display: inline-block;
+        padding: 15px 20px;
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: white;
+    }
+    /* Giftcard Section */
+
+    .giftcard__title{
+        font-size: 36px;
+    }
+
+    .giftcard__image-container{
+        width: 40rem;
+    }
+
+    /* Hosting Section */
+    .Hosting{
+        padding: 0;
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .Hosting__container{
+        display: flex;
+        height: 30rem;
+        background-image: url('../assets/host.jpg');
+        border-radius: 0px;
+        padding: 40px;
+    }
+    
+    .Hosting__title{
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 1.1;
+        padding-right: 80%;
+    }
+
+    /* Inspiration */
+
+    .Inspiration{
+        padding-top: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .destiny{
+        flex: 33%;
+    }
+    
+    /* Links */
+
+    footer{
+        padding: 0px 40px;
+
+    }
+
+    .Links{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 40px 0px;
+    }
+
+    .Links-containers{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--divider);
+    }
+
+    .Links__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Support__link{
+        display: block;
+        margin-top: 12px;
+        padding: 0px 12px;
+        width: 310px;
+        flex: 30%;
+    }
+    
+    /* .Links__list{
+        font-size: 14px;
+        color: var(--gray);
+        flex: 1;
+    } */
+}
